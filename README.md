@@ -2,34 +2,20 @@
 ![image](https://github.com/s2s2hyun/Vite_React/assets/100761993/80a54a99-aa81-4177-b1ed-8c74a173b651)
 
 Vite ⚡
-Next Generation Frontend Tooling
 
-💡 Instant Server Start
-⚡️ Lightning Fast HMR
-🛠️ Rich Features
-📦 Optimized Build
-🔩 Universal Plugin Interface
-🔑 Fully Typed APIs
-Vite (French word for "quick", pronounced /vit/, like "veet") is a new breed of frontend build tooling that significantly improves the frontend development experience. It consists of two major parts:
+This is a demo project for [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages).
+This project demonstrate how to develop a library using vite as your local develop environment.
 
-A dev server that serves your source files over native ES modules, with rich built-in features and astonishingly fast Hot Module Replacement (HMR).
+Notice that we put the **whole** vite-pages project (including config, index.html, .etc) into a sub folder. It makes the root directory cleaner. **This is a neat way to "embed" a vite-pages document project inside your main project.**
 
-A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
+You can run this demo in [StackBlitz](https://stackblitz.com/fork/github/vitejs/vite-plugin-react-pages/tree/main/packages/create-project/template-lib?file=README.md&terminal=dev), entirely in your browser!
 
-In addition, Vite is highly extensible via its Plugin API and JavaScript API with full typing support.
+## How to use
 
-Read the Docs to Learn More.
+`npm install` or `pnpm install` or `yarn`
 
-Packages
-Package	Version (click for changelogs)
-vite	vite version
-@vitejs/plugin-legacy	plugin-legacy version
-create-vite	create-vite version
-Contribution
-See Contributing Guide.
+`npm run dev` You can play with docs and demos of your packages in local develop environment.
 
-License
-MIT.
+---
 
-Sponsors
-sponsors
+Checkout [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) for more info.
