@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const navigateTo = (url: any) => {
+  const navigateTo = (url: string) => {
     window.history.pushState(null, "", url);
     const popStateEvent = new PopStateEvent("popstate");
     window.dispatchEvent(popStateEvent);
