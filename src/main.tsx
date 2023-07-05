@@ -1,19 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
 import About from "./About";
 import "./index.css";
 
-const container = document.getElementById("root") as HTMLElement;
+const Router = () => {
+  const [route, setRoute] = useState(window.location.pathname);
 
-ReactDOM.createRoot(container).render(
+  useEffect(() => {
+    const handlePopstate = () => {
+      setRoute(window.location.pathname);
+    };
+
+    window.addEventListener("popstate", handlePopstate);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopstate);
+    };
+  }, []);
+
+  switch (route) {
+    case "/about":
+      return <About />;
+    default:
+      return <App />;
+  }
+};
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
+    <Router />
   </React.StrictMode>
 );

@@ -2,14 +2,12 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { useNavigate } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const navigate = useNavigate();
-
-  const ClickAbout = () => {
-    navigate("/about");
+  const navigateTo = (url: any) => {
+    window.history.pushState(null, "", url);
+    const popStateEvent = new PopStateEvent("popstate");
+    window.dispatchEvent(popStateEvent);
   };
 
   return (
@@ -22,9 +20,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Vite + React Main Home</h1>
       <p>Root</p>
-      <button onClick={ClickAbout}>About Page Click</button>
+      <button onClick={() => navigateTo("/about")}>About Page Click</button>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
