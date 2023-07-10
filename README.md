@@ -1,11 +1,10 @@
 <p align="center">
   
-| ------------------------------- | ------------------------------- |
-| ![Wanted 7월]     | <a href="https://velog.io/@s2s2hyun/React%EC%99%80-History-API-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-SPA-Router-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0" target="_blank" rel="noopener noreferrer">
-   온보딩 과제 제출
-  </a>  |
-| ![Wanted 7월]          | <a href=https://velog.io/@s2s2hyun/Vite-React-useRouter-Hook-%EB%A7%8C%EB%93%A4%EA%B8%B0 target="_blank" rel="noopener noreferrer">useRouter Hook 과제 수정 </a>   |
-|  |                                 |
+
+
+| ![Wanted 7월](image_url)        | ![온보딩 과제 제출](image_url)  |
+| [Wanted 7월](link_url)          | [온보딩 과제 제출](link_url)    |
+
 </p>
 
 <br />
